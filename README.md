@@ -32,6 +32,8 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'path' => 'google-news-sitemap.xml',
+    'disk' => 'public',
 ];
 ```
 
