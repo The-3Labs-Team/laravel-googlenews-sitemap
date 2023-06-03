@@ -10,6 +10,10 @@ This package helps you to create a [Google News Sitemap](https://developers.goog
 
 Don't forget to create your Google News Sitemap and submit it in [Google Search Console](https://search.google.com/search-console/about), as a standard sitemap.
 
+## Prerequisites
+
+-   Laravel 10.x or higher
+
 ## Installation
 
 You can install the package via composer:
