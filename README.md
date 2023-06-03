@@ -12,6 +12,7 @@ Don't forget to create your Google News Sitemap and submit it in [Google Search 
 
 ## Prerequisites
 
+-   PHP 8.1 or higher
 -   Laravel 10.x or higher
 
 ## Installation
@@ -66,7 +67,12 @@ foreach($articles as $article) {
 $sitemap->writeToDisk();
 ```
 
-Please remembed that Google News **does not accepts** news older than 2 days ([info](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap)). Please adapt your collection as well.
+You can use it as a scheduled command, observer etc...
+
+**Note**: according to ([Google](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap)), you should provide articles that are:
+
+-   No older than 2 days
+-   No more than 60 items
 
 ## Testing
 
