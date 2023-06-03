@@ -55,12 +55,12 @@ $sitemap = LaravelGooglenewsSitemap::create();
 // $articles = App\Models\Article::wherePublished()...
 foreach($articles as $article) {
     $sitemap->add(
-        url: $article->url,
+        url: route('articles.show', $article->slug),
         authorName: $article->authorName,
         title: $article->title,
         lastModificationDate: $article->updated_at,
         language: 'it',
-        )
+    );
 }
 
 // Write sitemap to disk
