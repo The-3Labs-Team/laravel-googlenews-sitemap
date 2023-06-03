@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/the-3labs-team/laravel-googlenews-sitemap/raw/HEAD/art/banner.png" width="100%" alt="Logo Laravel Shortcode Plus"></p>
+
 # Laravel Google News (GNews) Sitemap
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
