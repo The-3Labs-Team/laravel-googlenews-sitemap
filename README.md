@@ -2,6 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Github PHPStan](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3Aphpstan+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/fa0e9f4bdb9145cdab442dfbf4c26573)](https://app.codacy.com/gh/The-3Labs-Team/laravel-googlenews-sitemap/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
