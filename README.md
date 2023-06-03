@@ -1,40 +1,14 @@
 # Laravel Google News (GNews) Sitemap
 
-```php
-// Init the sitemap
-$sitemap = LaravelGooglenewsSitemap::create();
-
-// Add urls
-// $articles = App\Models\Article::wherePublished()...
-foreach($articles as $article) {
-    $sitemap->add(
-        url: $article->url,
-        authorName: $article->authorName,
-        title: $article->title,
-        lastModificationDate: $article->updated_at,
-        language: 'it',
-        )
-}
-
-// Write sitemap to disk
-$sitemap->writeToDisk();
-
-```
-
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fa0e9f4bdb9145cdab442dfbf4c26573)](https://app.codacy.com/gh/The-3Labs-Team/laravel-googlenews-sitemap/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package helps you to create a [Google News Sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap). It is useful when you have a blog/news website and you are involved in [Google Published Center](https://publishercenter.google.com).
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-googlenews-sitemap.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-googlenews-sitemap)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+Don't forget to create your Google News Sitemap and submit it in [Google Search Console](https://search.google.com/search-console/about), as a standard sitemap.
 
 ## Installation
 
@@ -42,13 +16,6 @@ You can install the package via composer:
 
 ```bash
 composer require the-3labs-team/laravel-googlenews-sitemap
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-googlenews-sitemap-migrations"
-php artisan migrate
 ```
 
 You can publish the config file with:
@@ -72,10 +39,29 @@ php artisan vendor:publish --tag="laravel-googlenews-sitemap-views"
 
 ## Usage
 
+You can use the package as follows:
+
 ```php
-$laravelGooglenewsSitemap = new The3LabsTeam\LaravelGooglenewsSitemap();
-echo $laravelGooglenewsSitemap->echoPhrase('Hello, The3LabsTeam!');
+// Init the sitemap
+$sitemap = LaravelGooglenewsSitemap::create();
+
+// Add urls
+// $articles = App\Models\Article::wherePublished()...
+foreach($articles as $article) {
+    $sitemap->add(
+        url: $article->url,
+        authorName: $article->authorName,
+        title: $article->title,
+        lastModificationDate: $article->updated_at,
+        language: 'it',
+        )
+}
+
+// Write sitemap to disk
+$sitemap->writeToDisk();
 ```
+
+Please remembed that Google News **does not accepts** news older than 2 days ([info](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap)). Please adapt your collection as well.
 
 ## Testing
 
