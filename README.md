@@ -25,15 +25,14 @@ composer require the-3labs-team/laravel-googlenews-sitemap
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-googlenews-sitemap-config"
+php artisan vendor:publish --tag="googlenews-sitemap-config"
 ```
 
 This is the contents of the published config file:
 
 ```php
 return [
-    'path' => 'google-news-sitemap.xml',
-    'disk' => 'public',
+    'path' => 'public/google-news-sitemap.xml',
 ];
 ```
 
