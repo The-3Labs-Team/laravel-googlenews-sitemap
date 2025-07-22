@@ -2,6 +2,23 @@
 
 All notable changes to `laravel-googlenews-sitemap` will be documented in this file.
 
+## v1.0.2 - 2025-07-22
+
+Add support to PHP 8.4
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/9
+* Bump amancevice/setup-code-climate from 1 to 2 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/7
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/4
+* Bump ramsey/composer-install from 2 to 3 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/6
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.2.0 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/11
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/12
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/13
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/pull/16
+
+**Full Changelog**: https://github.com/The-3Labs-Team/laravel-googlenews-sitemap/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2024-03-18
 
 ### What's Changed
