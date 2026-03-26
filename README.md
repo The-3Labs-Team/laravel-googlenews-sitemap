@@ -4,10 +4,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Github PHPStan](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3Aphpstan+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/the-3labs-team/laravel-googlenews-sitemap/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/the-3labs-team/laravel-googlenews-sitemap/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Maintainability](https://api.codeclimate.com/v1/badges/22028e79c4aa8a329bd5/maintainability)](https://codeclimate.com/github/The-3Labs-Team/laravel-googlenews-sitemap/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/22028e79c4aa8a329bd5/test_coverage)](https://codeclimate.com/github/The-3Labs-Team/laravel-googlenews-sitemap/test_coverage)
 ![License Mit](https://img.shields.io/github/license/murdercode/laravel-shortcode-plus)
 [![Total Downloads](https://img.shields.io/packagist/dt/the-3labs-team/laravel-googlenews-sitemap.svg?style=flat-square)](https://packagist.org/packages/the-3labs-team/laravel-googlenews-sitemap)
 
@@ -85,6 +81,8 @@ You can use it as a scheduled command, observer etc...
 composer test
 ```
 
+CI currently verifies the package against the latest supported Laravel package stack: PHP 8.3 and Laravel 13 via Testbench 11.
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
@@ -138,4 +136,3 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
     </a>
 
 </div>
-

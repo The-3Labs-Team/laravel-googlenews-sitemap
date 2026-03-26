@@ -2,6 +2,11 @@
 
 use The3LabsTeam\LaravelGooglenewsSitemap\LaravelGooglenewsSitemap;
 
+it('boots the package configuration', function () {
+    expect(config('googlenews-sitemap.path'))
+        ->toBe('public/google-news-sitemap.xml');
+});
+
 it('can add an url in sitemap', function () {
     $sitemap = LaravelGooglenewsSitemap::create();
     $sitemap->add(
