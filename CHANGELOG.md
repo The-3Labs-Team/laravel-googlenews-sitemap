@@ -2,6 +2,31 @@
 
 All notable changes to `laravel-googlenews-sitemap` will be documented in this file.
 
+## v1.1.0 - 2026-03-26
+
+### What's Changed
+
+- refresh the maintenance baseline with a single verified pull request CI workflow
+- upgrade the package development toolchain to Laravel 13 / Testbench 11 / Pest 4 / PHPStan 2 / Larastan 3
+- add Composer Dependabot coverage and remove redundant workflow noise
+- include the XML declaration compatibility fix for sitemap rendering
+
+### Config Changes
+
+- No package config changes are required.
+
+### Upgrade Steps
+
+- Run `composer update the-3labs-team/laravel-googlenews-sitemap`.
+- If you published the package views, update or republish `laravel-googlenews-sitemap` views so the XML declaration compatibility fix is included.
+- Repository automation now centers on a single pull request CI workflow plus weekly Dependabot coverage for Composer and GitHub Actions.
+
+### Compatibility Notes
+
+- Runtime constraints remain PHP 8.1+.
+- The repository CI baseline is now verified on PHP 8.3 with Laravel 13 via Testbench 11.
+- This release supersedes the old workflow-only Dependabot PRs #20, #21, and #23.
+
 ## v1.0.2 - 2025-07-22
 
 Add support to PHP 8.4
